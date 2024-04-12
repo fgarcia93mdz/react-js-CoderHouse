@@ -5,9 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter } from 'react-router-dom'
-// , Link, Switch, Route
 
-// redux toolkit imports
 import { store } from './app/store'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from '@mui/material';

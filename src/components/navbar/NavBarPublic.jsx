@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import "./NavBar.styles.css";
 import Marquee from "react-fast-marquee";
 
 import AppBar from "@mui/material/AppBar";
@@ -79,74 +78,6 @@ const NavBarPublic = () => {
               <Link to="/login">
                <LogoItem />
               </Link>
-
-              <Box
-                sx={{
-                  flexGrow: 1,
-                  display: { xs: "flex", sm: "none" },
-                  justifyContent: "end",
-                }}
-              >
-               <LogoItem />
-
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  // onClick={handleOpenNavMenu}
-                  color="inherit"
-                >
-                  <MenuIcon />
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorElNav}
-                  anchorOrigin={{
-                    vertical: "bottom",
-                    horizontal: "left",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "left",
-                  }}
-                  open={Boolean(anchorElNav)}
-                  onClose={handleCloseNavMenu}
-                  sx={{
-                    display: { xs: "block", md: "none" },
-                  }}
-                >
-                  <Link to="/pasaje-interurbano">
-                    <MenuItem
-                      key={"/pasaje-interurbano"}
-                      // onClick={handleCloseNavMenu}
-                    >
-                      {/* <ArrowDownwardIcon /> */}
-                      <Typography textAlign="center">PASAJES INTERURBANOS</Typography>
-                    </MenuItem>
-                  </Link>
-                  <Link to="/pasaje-media">
-                    <MenuItem
-                      key={"/pasaje-media"}
-                      // onClick={handleCloseNavMenu}
-                    >
-                      <Typography textAlign="center">PASAJES DE MEDIA DISTANCIA</Typography>
-                    </MenuItem>
-                  </Link>
-
-                  <a href="https://shop.terminalmendoza.com.ar/search">
-                    <MenuItem
-                      key={"/pasaje-interurbano"}
-                      // onClick={handleCloseNavMenu}
-                    >
-                      <Typography textAlign="center">
-                        PASAJES DE LARGA DISTANCIA
-                      </Typography>
-                    </MenuItem>
-                  </a>
-                </Menu>
-              </Box>
               <Box
                 sx={{
                   flexGrow: 1,
