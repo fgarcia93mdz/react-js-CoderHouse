@@ -7,9 +7,19 @@ body {
   background: '#0e315a';
 }
 
+/* h1 {
+  margin: 10vh 0 0 10vw;
+} */
+
 .App {
   flex: 1 0 auto;
+  /* padding-left: 10vw; */
+  /* padding-top: 10vh; */
+  /* font-weight: bold;
+  font-size: 1.5rem; */
   background: '#0e315a';
+  /*height: 120vh;*/
+  /* '#0e315a'; Este olor es un poco mas claro que el que esta en la tablas*/
 }
 
 .Footer {
@@ -26,28 +36,30 @@ a {
   color: inherit;
 }
 
+/* Never use !important, just used here because I had to modify Toast library */
 .toast-position {
   top: 58px !important;
-
+  
 }
 
 @media (min-width: 600px) {
   .toast-position {
     top: 88px !important;
-
+    
   }
 }
 
 @media (min-width: 750px) {
   .toast-position {
     top: 68px !important;
-
+    
   }
 }
 
 @media (min-width: 1200px) {
   .toast-position {
     top: 78px !important;
-
+    
   }
 }
+
